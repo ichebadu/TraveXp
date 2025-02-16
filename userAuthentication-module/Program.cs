@@ -10,7 +10,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
-builder.Services.AddDbContext<AppDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
+
+builder.Services.AddDbContext<AppDbContext>(options => 
+            options.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
 
 builder.Services.AddIdentity<Users,IdentityRole>(options => 
 {

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("userAuthentication-module")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43c6e704e26d1690058998a90909bd35a2cafcae")]
 [assembly: System.Reflection.AssemblyProductAttribute("userAuthentication-module")]
 [assembly: System.Reflection.AssemblyTitleAttribute("userAuthentication-module")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
