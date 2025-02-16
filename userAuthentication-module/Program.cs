@@ -9,11 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 
-var app = builder.Build();
+
 
 builder.Services.AddDbContext<AppDbContext>(options => 
             options.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
-
 builder.Services.AddIdentity<Users,IdentityRole>(options => 
 {
     options.Password.RequireNonAlphanumeric = false;
@@ -28,6 +27,7 @@ builder.Services.AddIdentity<Users,IdentityRole>(options =>
 .AddEntityFrameworkStores<AppDbContext>()
 .AddDefaultTokenProviders();
 
+var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
